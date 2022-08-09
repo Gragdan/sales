@@ -19,12 +19,12 @@ public class SalesManager {
         }
         return max;
     }
-    public int calcStat(){
-        int calcStat = 0;
-        int min = sales[0];
-        int max = sales[0];
-        int sum = 0;
-        for (int sale : sales) {
+    public long calcStat(){
+        long calcStat = 0;
+        long min = sales[0];
+        long max = sales[0];
+        long sum = 0;
+        for (long sale : sales) {
             if (sale > max) {
                 max = sale;
             }
@@ -33,7 +33,7 @@ public class SalesManager {
             }
             sum = sum + sale;
         }
-        int crop = sum - min - max;
+        long crop = sum - min - max;
         if (sales.length > 0) {
             calcStat = crop / (sales.length - 2);
         } else {
