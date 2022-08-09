@@ -1,4 +1,5 @@
-import src.SalesManager;
+package src;
+
 
 public class Main {
 
